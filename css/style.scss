@@ -298,9 +298,11 @@ button {
 	}
 }
 
-.seasonal-offer {
+.goods {
 	max-width: $max-width;
 	margin: 0 auto;
+
+	border-bottom: 1px solid $text-color;
 
 	&__heading {
 		margin: 60px 0 20px;
@@ -312,6 +314,8 @@ button {
 	justify-content: space-between;
 	align-items: stretch;
 	flex-wrap: wrap;
+
+	margin-bottom: 20px;
 }
 
 .product {
@@ -347,6 +351,7 @@ button {
 		color: $product-green;
 
 		&-old {
+			text-decoration: line-through;
 			font-weight: 400;
 			font-size: 2rem;
 			color: #C0C0C0;
@@ -494,4 +499,18 @@ button {
 	&:hover {
 		box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
 	}
+}
+
+.all-category-products {
+	display: block;
+	padding: 15px 30px;
+	border-radius: 50px;
+	margin-bottom: 60px;
+
+	color: $product-green;
+	font-family: $font-rubik;
+	font-weight: 400;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05%;
 }
