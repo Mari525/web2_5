@@ -1,13 +1,16 @@
 $font-rubik: 'Rubik', Arial, sans-serif;
 $font-gara: 'Cormorant Garamond', serif;
+$font-roboto: 'Roboto', sans-serif;
 $text-color: #444444;
 $max-width: 1110px;
+$product-green: #4BB45E;
 
 *,
 *::after,
 *::before {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
@@ -312,17 +315,21 @@ button {
 }
 
 .product {
-	padding: 0 15px 20px;
 	margin-bottom: 30px;
+	position: relative;
 
 	font-family: $font-rubik;
 	text-align: center;
+
+	&:hover .product__appear {
+		display: block;
+	}
 
 	&__link {
 		display: block;
 	}
 
-	&__wrapper {
+	&__img-wrapper {
 		margin: 15px 0;
 		width: 290px;
 		height: 290px;
@@ -337,7 +344,7 @@ button {
 	&__price {
 		font-weight: 300;
 		font-size: 3.4rem;
-		color: #4BB45E;
+		color: $product-green;
 
 		&-old {
 			font-weight: 400;
@@ -348,9 +355,93 @@ button {
 
 	&__heading {
 		margin-top: 10px;
+		margin-bottom: 20px;
+
 		font-weight: 300;
 		font-size: 1.6rem;
 		color: $text-color;
+	}
+
+	&__appear {
+		display: none;
+		position: absolute;
+		width: 100%;
+		box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+		z-index: 10;
+		background-color: #FFFFFF;
+	}
+
+	&__list {
+		padding: 15px;
+		margin-bottom: 25px;
+		
+		background-color: $product-green;
+
+		color: #ffffff;
+		font-weight: 300;
+		font-size: 1.8rem;
+		text-align: left;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		width: 252px;
+		margin: 0 auto;
+	}
+
+	&__quantity {
+		height: 32px;
+		border-radius: 5px;
+		border: 1px solid #E6E6E6;
+	}
+
+	&__plus-minus {
+		height: 32px;
+		width: 32px;
+
+		background: none;
+		color: $product-green;
+		border: none;
+		font-weight: 300;
+		font-size: 1.6rem;
+	}
+
+	&__input {
+		width: 52px;
+		height: 32px;
+
+		background: none;
+		color: $text-color;
+		font-family: $font-roboto;
+		font-weight: 300;
+		font-size: 2rem;
+		border: none;
+	}
+
+	&__add-cart {
+		width: 116px;
+		height: 32px;
+		border-radius: 5px;
+
+		background: $product-green;
+		border: none;
+
+		color: #ffffff;
+		font-family: $font-roboto;
+		font-weight: 500;
+		font-size: 1.6rem;
+	}
+
+	&__buy-link {
+		display: block;
+		margin-top: 20px;
+		margin-bottom: 25px;
+
+		color: $product-green;
+		font-family: $font-roboto;
+		font-weight: 500;
+		font-size: 1.6rem;
 	}
 
 	&__label {
@@ -378,7 +469,7 @@ button {
 	}
 
 	&__new {
-		background-color: #4BB45E;
+		background-color: $product-green;
 		background-image: url(../img/new.svg);
 	}
 
@@ -398,5 +489,9 @@ button {
 		border: none;
 		background-image: url(../img/heart.svg);
 		background-repeat: no-repeat;
+	}
+
+	&:hover {
+		box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
 	}
 }
