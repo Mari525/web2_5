@@ -19,6 +19,7 @@ html {
 
 a {
 	text-decoration: none;
+	cursor: pointer;
 }
 
 ul {
@@ -88,13 +89,13 @@ button {
 	padding: 16px 0; 
 }
 
-.link-login {
+// .link-login {
 
-}
+// }
 
-.link-register {
+// .link-register {
 
-}
+// }
 
 .info {
 	width: $max-width;
@@ -154,13 +155,13 @@ button {
 	font-size: 1.4rem;
 }
 
-.link-timetable {
+// .link-timetable {
 	
-}
+// }
 
-.link-address {
+// .link-address {
 
-}
+// }
 
 .categories {
 	background: linear-gradient(90deg, #3CB950 0%, #13DD33 100%);
@@ -302,7 +303,7 @@ button {
 	max-width: $max-width;
 	margin: 0 auto;
 
-	border-bottom: 1px solid $text-color;
+	border-bottom: 1px solid rgba(68, 68, 68, 0.1);
 
 	&__heading {
 		margin: 60px 0 20px;
@@ -371,7 +372,7 @@ button {
 		display: none;
 		position: absolute;
 		width: 100%;
-		box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 		z-index: 10;
 		background-color: #FFFFFF;
 	}
@@ -502,9 +503,16 @@ button {
 }
 
 .all-category-products {
-	display: block;
-	padding: 15px 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 195px;
+	height: 50px;
+	margin: 0 auto;
+
 	border-radius: 50px;
+	border: 1px solid $product-green;
 	margin-bottom: 60px;
 
 	color: $product-green;
@@ -513,4 +521,10 @@ button {
 	font-size: 1.6rem;
 	text-transform: uppercase;
 	letter-spacing: 0.05%;
+
+	&:hover {
+		color: #ffffff;
+		background-color: $product-green;
+		transition: 0.5s;
+	}
 }
