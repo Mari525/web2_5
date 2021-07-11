@@ -17,6 +17,10 @@ ul {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .width-1110 {
   max-width: 1110px;
   margin: 0 auto;
@@ -330,14 +334,20 @@ ul {
 
 .product {
   padding: 0 15px 20px;
+  margin-bottom: 30px;
   font-family: "Rubik", Arial, sans-serif;
   text-align: center;
+}
+
+.product__link {
+  display: block;
 }
 
 .product__wrapper {
   margin: 15px 0;
   width: 290px;
   height: 290px;
+  position: relative;
 }
 
 .product__img {
@@ -362,5 +372,48 @@ ul {
   font-weight: 300;
   font-size: 1.6rem;
   color: #444444;
+}
+
+.product__label {
+  border-radius: 22px;
+  border: 2px solid #ffffff;
+  position: absolute;
+  bottom: 40px;
+  margin: 0 74px;
+  padding: 6px 20px 6px 43px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: 20px center;
+}
+
+.product__sale {
+  background-color: #FF5555;
+  background-image: url(../img/sale.svg);
+}
+
+.product__new {
+  background-color: #4BB45E;
+  background-image: url(../img/new.svg);
+}
+
+.product__water {
+  background-color: #55B8FF;
+  background-image: url(../img/water.svg);
+}
+
+.product__heart {
+  position: absolute;
+  top: 14px;
+  right: 15px;
+  width: 29px;
+  height: 28px;
+  background: none;
+  border: none;
+  background-image: url(../img/heart.svg);
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=style.css.map */
