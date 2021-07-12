@@ -36,6 +36,36 @@ button {
 	margin: 0 auto;
 }
 
+.dots {
+	margin: 0 auto;
+	max-width: 100px;
+
+	&__item {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: none;
+		border: none;
+		margin-right: 10px;
+
+		&-green {
+			border: 1px solid $product-green;
+
+			&--active {
+				background-color: $product-green;
+			}
+		}
+
+		&-white {
+			border: 1px solid #ffffff;
+
+			&--active {
+				background-color: #ffffff;
+			}
+		}
+	}
+}
+
 .body {
 	background-color: #ffffff;
 }
@@ -125,7 +155,6 @@ button {
 }
 
 .logo {
-
 	&__img {
 		max-width: 206px;
 	}
@@ -208,6 +237,19 @@ button {
 	height: 500px;
 	position: relative;
 
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 1110px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		z-index: 5;
+	}
+
 	&__img {
 		width: 100%;
 		height: 100%;
@@ -219,10 +261,6 @@ button {
 		width: 463px;
 		height: 257px;
 		padding: 0 50px;
-		
-		position: absolute;
-		bottom: 121px;
-		left: 0;
 
 		border-radius: 10px;
 		background-color: rgba(255, 255, 255, 0.95);
@@ -238,6 +276,13 @@ button {
 		font-style: italic;
 		font-size: 4.2rem;
 		line-height: 5rem;
+	}
+
+	&__dots {
+		align-self: flex-end;
+		justify-self: center;
+		margin: 0;
+		margin-bottom: 20px;
 	}
 }
 
@@ -620,6 +665,7 @@ button {
 	font-family: $font-rubik;
 	border-radius: 10px;
 	position: relative;
+	margin-bottom: 20px;
 
 	&__heading {
 		color: rgba(68,68,68,0.42);
@@ -659,36 +705,6 @@ button {
 		position: absolute;
 		background-image: url(../img/review.svg);
 		background-repeat: no-repeat;
-	}
-}
-
-.dots {
-	margin: 0 auto;
-	max-width: 100px;
-
-	&__item {
-		width: 8px;
-		height: 8px;
-		border-radius: 50%;
-		background: none;
-		border: none;
-		margin-right: 10px;
-
-		&-green {
-			border: 1px solid $product-green;
-
-			&--active {
-				background-color: $product-green;
-			}
-		}
-
-		&-white {
-			border: 1px solid #ffffff;
-
-			&--active {
-				background-color: #ffffff;
-			}
-		}
 	}
 }
 
