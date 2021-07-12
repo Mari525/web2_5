@@ -365,6 +365,10 @@ button {
   margin: 60px 0 20px;
 }
 
+.goods:last-of-type {
+  border: none;
+}
+
 .products {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -557,6 +561,9 @@ button {
 }
 
 .all-category-products {
+  width: 195px;
+  height: 50px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -566,9 +573,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 195px;
-  height: 50px;
-  margin: 0 auto;
   border-radius: 50px;
   border: 1px solid #4BB45E;
   margin-bottom: 60px;
@@ -577,13 +581,28 @@ button {
   font-weight: 400;
   font-size: 1.6rem;
   text-transform: uppercase;
-  letter-spacing: 0.05%;
+  letter-spacing: 0.1em;
 }
 
 .all-category-products:hover {
   color: #ffffff;
-  background-color: #4BB45E;
+  background: -webkit-gradient(linear, left top, right top, from(#3CB950), to(#13DD33));
+  background: linear-gradient(90deg, #3CB950 0%, #13DD33 100%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.all-products {
+  background: -webkit-gradient(linear, left top, right top, from(#3CB950), to(#13DD33));
+  background: linear-gradient(90deg, #3CB950 0%, #13DD33 100%);
+  color: #ffffff;
+  width: 295px;
+}
+
+.all-products:hover {
+  color: #4BB45E;
+  background: none;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 /*# sourceMappingURL=style.css.map */

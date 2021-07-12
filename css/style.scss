@@ -322,6 +322,10 @@ button {
 	&__heading {
 		margin: 60px 0 20px;
 	}
+
+	&:last-of-type {
+		border: none;
+	}
 }
 
 .products {
@@ -517,13 +521,12 @@ button {
 }
 
 .all-category-products {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
 	width: 195px;
 	height: 50px;
 	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	border-radius: 50px;
 	border: 1px solid $product-green;
@@ -534,11 +537,23 @@ button {
 	font-weight: 400;
 	font-size: 1.6rem;
 	text-transform: uppercase;
-	letter-spacing: 0.05%;
+	letter-spacing: 0.1em;
 
 	&:hover {
 		color: #ffffff;
-		background-color: $product-green;
+		background: linear-gradient(90deg, #3CB950 0%, #13DD33 100%);
 		transition: 0.5s;
+	}
+}
+
+.all-products {
+	background: linear-gradient(90deg, #3CB950 0%, #13DD33 100%);
+	color: #ffffff;
+	width: 295px;
+
+	&:hover {
+		color: $product-green;
+		background: none;
+		transition: 1s;
 	}
 }
