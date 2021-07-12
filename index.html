@@ -40,29 +40,59 @@
 					</li>
 				</ul>
 				<div class="nav__account">
-					<a href="#" class="nav__link link-login">Войти</a>
-					<a href="#" class="nav__link link-register">Регистрация</a>
+					<a href="#" class="nav__link link-login">
+						<svg class="link-login__svg">
+							<use xlink:href="svgs.svg#login"></use>
+						</svg>
+						Войти
+					</a>
+					<a href="#" class="nav__link link-register">
+						<svg class="link-login__svg">
+							<use xlink:href="svgs.svg#register"></use>
+						</svg>
+						Регистрация
+					</a>
 				</div>
 			</nav>
 		</section>
 		<section class="info">
-			<div class="logo">
+			<a class="logo">
 				<img class="logo__img" src="img/logo.png" alt="" srcset="">
 				<p class="logo__text">сеть цветочных оптово-розничных центров</p>
-			</div>
+			</a>
 			<div class="info__contacts">
 				<div class="phones">
 					<a href="#" class="info__link phones__item">+7 965 151 18 39</a>
 					<a href="#" class="info__link phones__item">+7 916 122 18 98</a>
 				</div>
 				<div class="time-address">
-					<a href="#" class="info__link link-timetable">Ждем вас с 8:00 до 22:00</a>
-					<a href="#" class="info__link link-address">Адреса цветочных центров</a>
+					<a href="#" class="info__link link-timetable">
+						<svg class="link-timetable__svg">
+							<use xlink:href="svgs.svg#clock"></use>
+						</svg>
+						Ждем вас с 8:00 до 22:00
+					</a>
+					<a href="#" class="info__link link-address">
+						<svg class="link-address__svg">
+							<use xlink:href="svgs.svg#map"></use>
+						</svg>
+						Адреса цветочных центров
+					</a>
 				</div>
 			</div>
 			<div class="info__favs-cart">
-				<a href="#" class="info__link favs">Избранное</a>
-				<a href="#" class="info__link cart">0 ₽</a>
+				<a href="#" class="info__link link-favs">
+					<svg class="link-favs__svg">
+						<use xlink:href="svgs.svg#heart"></use>
+					</svg>
+					Избранное
+				</a>
+				<a href="#" class="info__link link-cart">
+					<svg class="link-cart__svg">
+						<use xlink:href="svgs.svg#cart"></use>
+					</svg>
+					0 ₽
+				</a>
 			</div>
 		</section>
 		<section class="categories">
@@ -102,7 +132,918 @@
 			</div>
 		</section>
 		<section class="filters">
-			
+			<h2 class="filters__heading h2">Доставка цветов в Москве</h2>
+			<div class="width-1110">
+				<ul class="filters__list">
+					<li class="filter">
+						<button class="filter__button">
+							Цена ...
+						</button>
+					</li>
+					<li class="filter filter__big">
+						<button class="filter__button">
+							Цветы ...
+						</button>
+					</li>
+					<li class="filter">
+						<button class="filter__button">
+							Кому ...
+						</button>
+					</li>
+					<li class="filter">
+						<button class="filter__button">
+							Повод ...
+						</button>
+					</li>
+					<li class="filter filter__big">
+						<button class="filter__button">
+							Стиль ...
+						</button>
+					</li>					
+				</ul>
+			</div>
+		</section>
+		<section class="goods">
+			<h2 class="goods__heading h2">
+				Сезонное предложение
+			</h2>
+			<ul class="products">
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/minibucket1600-6.jpg" alt="" class="product__img">
+							<div class="product__new product__label">Новинка</div>
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">1 600 ₽</b>
+						<h3 class="product__heading">
+							Минибукет 1600-6
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/nobilis.jpg" alt="" class="product__img">
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">99 ₽</b>
+						<h3 class="product__heading">
+							Нобилис
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/rose-freedom.jpg" alt="" class="product__img">
+							<div class="product__sale product__label">Акция</div>
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">5 900 ₽</b>
+						<span class="product__price-old">6 600 ₽</span>
+						<h3 class="product__heading">
+							Роза Freedom 51 шт.
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/minibucket1200-3.jpg" alt="" class="product__img">
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">1 200 ₽</b>
+						<h3 class="product__heading">
+							Минибукет 1200-3
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/minibucket1200-2.jpg" alt="" class="product__img">
+							<div class="product__label product__new">Новинка</div>
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">1 250 ₽</b>
+						<h3 class="product__heading">
+							Минибукет 1200-2
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/minibucket1200-2.jpg" alt="" class="product__img">
+							<div class="product__label product__sale">Акция</div>
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">1 500 ₽</b>
+						<span class="product__price-old">1 750 ₽</span>
+						<h3 class="product__heading">
+							Роза Telea 51 шт.
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+			</ul>
+			<a class="all-category-products">Смотреть все</a>
+		</section>
+		<section class="goods seasonal-offer">
+			<h2 class="goods__heading h2">
+				Хит продаж
+			</h2>
+			<ul class="products">
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/minibucket1600-6-water.jpg" alt="" class="product__img">
+							<div class="product__water product__label">с водой</div>
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">1 600 ₽</b>
+						<h3 class="product__heading">
+							Минибукет 1600-6 (с водой)
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/minibucket1600-6.jpg" alt="" class="product__img">
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">1 600 ₽</b>
+						<h3 class="product__heading">
+							Минибукет 1600-6
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/rose-freedom.jpg" alt="" class="product__img">
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">5 900 ₽</b>
+						<h3 class="product__heading">
+							Роза Freedom 51 шт.
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/minibucket1400-3.jpg" alt="" class="product__img">
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">1 400 ₽</b>
+						<h3 class="product__heading">
+							Минибукет 1400-3
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/barhat.jpg" alt="" class="product__img">
+							<div class="product__new product__label">Новинка</div>
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">1 300 ₽</b>
+						<h3 class="product__heading">
+							«Бархатный сезон»
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/nobilis.jpg" alt="" class="product__img">
+							<div class="product__water product__label">с водой</div>
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">99 ₽</b>
+						<h3 class="product__heading">
+							Нобилис
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+			</ul>
+			<a class="all-category-products">Смотреть все</a>
+		</section>
+		<section class="goods hit-sales">
+			<h2 class="goods__heading h2">
+				Со скидкой
+			</h2>
+			<ul class="products">
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/minibucket1600-6.jpg" alt="" class="product__img">
+							<div class="product__sale product__label">Акция</div>
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">1 600 ₽</b>
+						<span class="product__price-old">1 600 ₽</span>
+						<h3 class="product__heading">
+							Минибукет 1600-6
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/first-kiss.jpg" alt="" class="product__img">
+							<div class="product__sale product__label">Акция</div>
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">1 436 ₽</b>
+						<span class="product__price-old">1 600 ₽</span>
+						<h3 class="product__heading">
+							«Первый поцелуй»
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/egoist.jpg" alt="" class="product__img">
+							<div class="product__sale product__label">Акция</div>
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">1 500 ₽</b>
+						<span class="product__price-old">1 600 ₽</span>
+						<h3 class="product__heading">
+							«Эгоист»
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/minibucket1600-4.jpg" alt="" class="product__img">
+							<div class="product__sale product__label">Акция</div>
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">1 600 ₽</b>
+						<span class="product__price-old">1 700 ₽</span>
+						<h3 class="product__heading">
+							Минибукет 1600-4
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/minibucket1400-2.jpg" alt="" class="product__img">
+							<div class="product__sale product__label">Акция</div>
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">1 400 ₽</b>
+						<span class="product__price-old">1 600 ₽</span>
+						<h3 class="product__heading">
+							Минибукет 1400-2
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/minibucket1600-1.jpg" alt="" class="product__img">
+							<div class="product__sale product__label">Акция</div>
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">1 600 ₽</b>
+						<span class="product__price-old">1 700 ₽</span>
+						<h3 class="product__heading">
+							Минибукет 1600-1
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+			</ul>
+			<a class="all-category-products">Смотреть все</a>
+		</section>
+		<section class="goods roses">
+			<h2 class="goods__heading h2">
+				Розы
+			</h2>
+			<ul class="products">
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/roses/iguana.jpg" alt="" class="product__img">
+							<div class="product__sale product__label">Акция</div>
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">9 900 ₽</b>
+						<span class="product__price-old">11 200 ₽</span>
+						<h3 class="product__heading">
+							Роза Iguana 101 шт.
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/roses/avalanche.jpg" alt="" class="product__img">
+							<div class="product__sale product__label">Акция</div>
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">9 900 ₽</b>
+						<span class="product__price-old">11 200 ₽</span>
+						<h3 class="product__heading">
+							Роза Avalanche 101 шт.
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/roses/circus.jpg" alt="" class="product__img">
+							<div class="product__sale product__label">Акция</div>
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">9 900 ₽</b>
+						<span class="product__price-old">11 200 ₽</span>
+						<h3 class="product__heading">
+							Роза Circus 101 шт.
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/roses/llios.jpg" alt="" class="product__img">
+							<div class="product__sale product__label">Акция</div>
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">9 900 ₽</b>
+						<span class="product__price-old">11 200 ₽</span>
+						<h3 class="product__heading">
+							Роза Ilios 101 шт.
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/roses/carusel.jpg" alt="" class="product__img">
+							<div class="product__sale product__label">Акция</div>
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">9 900 ₽</b>
+						<span class="product__price-old">11 200 ₽</span>
+						<h3 class="product__heading">
+							Роза Carusel 101 шт.
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+				<li class="product">
+					<a href="#" class="product__link">
+						<div class="product__img-wrapper">
+							<img src="img/products/minibucket1600-6.jpg" alt="" class="product__img">
+							<div class="product__sale product__label">Акция</div>
+							<button class="product__heart"></button>
+						</div>
+						<b class="product__price">9 900 ₽</b>
+						<span class="product__price-old">11 200 ₽</span>
+						<h3 class="product__heading">
+							Роза Telea 101 шт.
+						</h3>
+					</a>
+					<div class="product__appear">
+						<ul class="product__list">
+							<li class="product__item">
+								Роза - 3  шт. (50 см.),
+							</li>
+							<li class="product__item">
+								Хризантема кустовая - 4 шт.,
+							</li>
+							<li class="product__item">
+								Лилия Азиатика - 1 шт.
+							</li>
+						</ul>
+						<div class="product__wrapper">
+							<div class="product__quantity">
+								<button class="product__plus-minus">-</button>
+								<input class="product__input" type="number" placeholder="1">
+								<button class="product__plus-minus">+</button>
+							</div>
+							<button class="product__add-cart">В корзину</button>
+						</div>
+						<a class="product__buy-link" href="#">Купить в один клик</a>
+					</div>
+				</li>
+			</ul>
+			<a class="all-category-products" href="#">Смотреть все</a>
+			<a class="all-category-products all-products" href="#" >Смотреть весь каталог</a>
 		</section>
 	</main>
 </body>
