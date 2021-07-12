@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,400;1,600&family=Montserrat:wght@400;500&family=Roboto:wght@300;400;500&family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mobile.css">
 	<title>Document</title>
 </head>
 <body class="body">
@@ -57,7 +58,7 @@
 		</section>
 		<section class="info">
 			<a class="logo">
-				<img class="logo__img" src="img/logo.png" alt="" srcset="">
+				<img class="logo__img" src="img/logo.png" alt="" srcset="img/logo.png 206w, img/logo-small.png 156w">
 				<p class="logo__text">сеть цветочных оптово-розничных центров</p>
 			</a>
 			<div class="info__contacts">
@@ -94,6 +95,11 @@
 					0 ₽
 				</a>
 			</div>
+			<button class="burger">
+				<svg class="burger__svg">
+					<use xlink:href="svgs.svg#burger"></use>
+				</svg>
+			</button>
 		</section>
 		<section class="categories">
 			<div class="width-1110">
@@ -125,7 +131,7 @@
 	</header>
 	<main class="main">
 		<section class="slider">
-			<img class="slider__img" src="img/slider1.jpg" alt="" srcset="">
+			<img class="slider__img" src="img/slider1.jpg" alt="" srcset="img/slider1.jpg 1920w, img/slider1-small.jpg 320w">
 			<div class="slider__wrapper">
 				<div class="slider__box">
 					<p class="slider__text">Всегда в продаже более 100 готовых дизайнерских букетов</p>
@@ -138,6 +144,13 @@
 					<button class="dots__item dots__item-white"></button>
 					<button class="dots__item dots__item-white"></button>
 				</div>
+			</div>
+			<div class="slider__dots-mobile dots">
+				<button class="dots__item dots__item-green dots__item-green--active"></button>
+				<button class="dots__item dots__item-green"></button>
+				<button class="dots__item dots__item-green"></button>
+				<button class="dots__item dots__item-green"></button>
+				<button class="dots__item dots__item-green"></button>
 			</div>
 		</section>
 		<section class="filters">
@@ -388,6 +401,14 @@
 					</div>
 				</li>
 			</ul>
+			<div class="goods__dots dots">
+				<button class="dots__item dots__item-green dots__item-green--active"></button>
+				<button class="dots__item dots__item-green"></button>
+				<button class="dots__item dots__item-green"></button>
+				<button class="dots__item dots__item-green"></button>
+				<button class="dots__item dots__item-green"></button>
+				<button class="dots__item dots__item-green"></button>
+			</div>
 			<a class="all-category-products">Смотреть все</a>
 		</section>
 		<section class="goods seasonal-offer">
@@ -603,6 +624,14 @@
 					</div>
 				</li>
 			</ul>
+			<div class="goods__dots dots">
+				<button class="dots__item dots__item-green dots__item-green--active"></button>
+				<button class="dots__item dots__item-green"></button>
+				<button class="dots__item dots__item-green"></button>
+				<button class="dots__item dots__item-green"></button>
+				<button class="dots__item dots__item-green"></button>
+				<button class="dots__item dots__item-green"></button>
+			</div>
 			<a class="all-category-products">Смотреть все</a>
 		</section>
 		<section class="goods hit-sales">
@@ -827,6 +856,14 @@
 					</div>
 				</li>
 			</ul>
+			<div class="goods__dots dots">
+				<button class="dots__item dots__item-green dots__item-green--active"></button>
+				<button class="dots__item dots__item-green"></button>
+				<button class="dots__item dots__item-green"></button>
+				<button class="dots__item dots__item-green"></button>
+				<button class="dots__item dots__item-green"></button>
+				<button class="dots__item dots__item-green"></button>
+			</div>
 			<a class="all-category-products">Смотреть все</a>
 		</section>
 		<section class="goods roses">
@@ -1051,6 +1088,14 @@
 					</div>
 				</li>
 			</ul>
+			<div class="goods__dots dots">
+				<button class="dots__item dots__item-green dots__item-green--active"></button>
+				<button class="dots__item dots__item-green"></button>
+				<button class="dots__item dots__item-green"></button>
+				<button class="dots__item dots__item-green"></button>
+				<button class="dots__item dots__item-green"></button>
+				<button class="dots__item dots__item-green"></button>
+			</div>
 			<a class="all-category-products" href="#">Смотреть все</a>
 			<a class="all-category-products all-products" href="#" >Смотреть весь каталог</a>
 		</section>
@@ -1117,7 +1162,7 @@
 						</li><li class="flower-centres__item">
 							<a href="#" class="flower-centres__link">м. Красносельская</a>
 						</li><li class="flower-centres__item">
-							<a href="#" class="flower-centres__link">м. Красносельская</a>
+							<a href="#" class="flower-centres__link">м. Черкизовская</a>
 						</li>
 					</ul>
 				</div>

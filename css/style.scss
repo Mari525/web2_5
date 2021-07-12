@@ -38,7 +38,7 @@ button {
 
 .dots {
 	margin: 0 auto;
-	max-width: 100px;
+	max-width: 130px;
 
 	&__item {
 		width: 8px;
@@ -127,7 +127,7 @@ button {
 }
 
 .info {
-	width: $max-width;
+	max-width: $max-width;
 	margin: 0 auto;
 	padding: 15px 0;
 
@@ -152,6 +152,10 @@ button {
 	&__link {
 		color: $text-color;
 	}
+}
+
+.burger {
+	display: none;
 }
 
 .logo {
@@ -284,6 +288,10 @@ button {
 		margin: 0;
 		margin-bottom: 20px;
 	}
+
+	&__dots-mobile {
+		display: none;
+	}
 }
 
 .link-arrow {
@@ -321,6 +329,7 @@ button {
 
 	&__list {
 		display: flex;
+		flex-wrap: wrap;
 	}
 }
 
@@ -372,6 +381,10 @@ button {
 
 	&:last-of-type {
 		border: none;
+	}
+
+	&__dots {
+		display: none;
 	}
 }
 
