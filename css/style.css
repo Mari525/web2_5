@@ -89,9 +89,18 @@ button {
 
 .link-login,
 .link-register {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: 30px;
   padding: 16px 0;
+}
+
+.link-login__svg,
+.link-register__svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
 }
 
 .info {
@@ -170,6 +179,40 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 1.4rem;
+}
+
+.link-timetable,
+.link-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.link-timetable__svg,
+.link-address__svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.link-favs,
+.link-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.link-favs__svg,
+.link-cart__svg {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
 }
 
 .categories {
