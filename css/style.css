@@ -912,4 +912,8 @@ button {
 .footer__item a {
   color: #ffffff;
 }
+
+.footer-mobile {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
