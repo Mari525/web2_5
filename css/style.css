@@ -31,7 +31,7 @@ button {
 
 .dots {
   margin: 0 auto;
-  max-width: 100px;
+  max-width: 130px;
 }
 
 .dots__item {
@@ -134,7 +134,7 @@ button {
 }
 
 .info {
-  width: 1110px;
+  max-width: 1110px;
   margin: 0 auto;
   padding: 15px 0;
   display: -webkit-box;
@@ -172,6 +172,10 @@ button {
 
 .info__link {
   color: #444444;
+}
+
+.burger {
+  display: none;
 }
 
 .logo__img {
@@ -333,6 +337,10 @@ button {
   margin-bottom: 20px;
 }
 
+.slider__dots-mobile {
+  display: none;
+}
+
 .link-arrow {
   color: #407014;
   font-family: "Rubik", Arial, sans-serif;
@@ -423,6 +431,10 @@ button {
 
 .goods:last-of-type {
   border: none;
+}
+
+.goods__dots {
+  display: none;
 }
 
 .products {
