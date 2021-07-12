@@ -1,6 +1,7 @@
 $font-rubik: 'Rubik', Arial, sans-serif;
 $font-gara: 'Cormorant Garamond', serif;
 $font-roboto: 'Roboto', sans-serif;
+$font-mont: 'Montserrat', sans-serif;
 $text-color: #444444;
 $max-width: 1110px;
 $product-green: #4BB45E;
@@ -245,9 +246,10 @@ button {
 	font-family: $font-rubik;
 	font-size: 1.4rem;
 	font-weight: 400;
+	text-decoration: underline;
 
 	&:hover {
-		text-decoration: underline;
+		text-decoration: none;
 	}
 }
 
@@ -557,3 +559,123 @@ button {
 		transition: 1s;
 	}
 }
+
+.flower-centres {
+	background-color: #FFF5F5;
+	padding: 40px 0;
+	margin-bottom: 60px;
+
+	&__heading {
+		margin-bottom: 20px;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__list {
+		font-family: $font-mont;
+		font-size: 2rem;
+	}
+
+	&__link {
+		display: block;
+		padding: 8px 12px;
+
+		color: $text-color;
+
+		&:hover {
+			background-color: #FF5555;
+			border-radius: 5px;
+			color: #ffffff;
+		}
+	}
+}
+
+.reviews {
+	max-width: $max-width;
+	margin: 0 auto;
+	border-top: 1px solid rgba(68,68,68,0.1);
+	padding-top: 60px;
+	padding-bottom: 40px;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__heading {
+		margin-left: 15px;
+		margin-bottom: 20px;
+	}
+}
+
+.review {
+	background-color: #FFFEF2;
+	width: 540px;
+	padding: 20px;
+	font-family: $font-rubik;
+	border-radius: 10px;
+
+	&__heading {
+		color: rgba(68,68,68,0.42);
+		font-size: 1.4rem;
+	}
+
+	&__author {
+		font-style: italic;
+		font-size: 1.8rem;
+		color: $text-color;
+	}
+
+	&__stars {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	&__star {
+		width: 16px;
+		height: 14px;
+		margin-right: 5px;
+	}
+
+	&__text {
+		font-weight: 300;
+		font-size: 1.5rem;
+		line-height: 150%;
+	}
+}
+
+.dots {
+	margin: 0 auto;
+	max-width: 100px;
+
+	&__item {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: none;
+		border: none;
+		margin-right: 10px;
+
+		&-green {
+			border: 1px solid $product-green;
+
+			&--active {
+				background-color: $product-green;
+			}
+		}
+
+		&-white {
+			border: 1px solid #ffffff;
+
+			&--active {
+				background-color: #ffffff;
+			}
+		}
+	}
+}
+
