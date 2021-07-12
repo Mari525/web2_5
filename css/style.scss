@@ -304,6 +304,18 @@ button {
 	&:hover {
 		text-decoration: none;
 	}
+
+	&::after {
+		content: "";
+		display: inline-block;
+		width: 7px;
+		height: 13px;
+		margin-left: 5px;
+
+		background-image: url(../img/arrow-right.svg);
+		background-repeat: no-repeat;
+		background-position: bottom;
+	}
 }
 
 .h2 {
