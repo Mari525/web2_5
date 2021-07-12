@@ -265,8 +265,8 @@ button {
   font-size: 1.8rem;
 }
 
-.categories__item {
-  padding: 14px 25px;
+.categories__item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .categories__item:not(:last-of-type) {
@@ -275,6 +275,8 @@ button {
 
 .categories__link {
   color: #ffffff;
+  display: block;
+  padding: 14px 25px;
 }
 
 .slider {
